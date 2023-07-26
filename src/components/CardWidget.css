@@ -1,0 +1,9 @@
+.cart{
+    position: relative;
+    display: inline-flex;
+    align-self: center;
+  }
+  .linkCart{
+    text-decoration: none;
+    color: black;
+  }

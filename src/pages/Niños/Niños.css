@@ -1,0 +1,13 @@
+.grid_productos_Niños {
+    display: grid;
+    padding-top: 120px;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20% 20%;
+    background-color: #e0e0e0;
+    justify-content: center;
+    padding-bottom: 200px;
+    gap: 30px;
+}
+.titulo_seccion{
+    margin-bottom: 60px;
+}

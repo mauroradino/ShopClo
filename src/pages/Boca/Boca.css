@@ -1,0 +1,48 @@
+.grid_productos_BocaHombres {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 50% 50% 50%;
+    background-color: #e0e0e0;
+    justify-content: center;
+    padding-bottom: 200px;
+    gap: 30px;
+}
+.cardProductos{
+    height: 600px;
+    position: relative;
+}
+.card-text{
+    position: absolute;
+    bottom: 100px;
+}
+.btn_masDetalles{
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    left: 30%;
+    right: 30%;
+    background-color: #b9b4b4;
+    border-color: black;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn_masDetalles:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.card-text{
+    margin-bottom: 0;
+}
+.tituloSeccion{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.banner{
+    padding-top: 60px;
+    width: 90%;
+    height: auto;
+}

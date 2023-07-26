@@ -1,0 +1,50 @@
+form{
+   background-color: #F1F1F1;
+   display: block;
+   justify-content: center;
+   margin: 0 auto;
+   padding: 100px;
+}
+.tituloRegistro{
+    padding-top: 100px;
+    margin-bottom: 40px ;
+}
+label{
+    margin-right: 20px;
+}
+.inputs{
+    display: inline-grid;
+  background-color: rgb(204, 203, 203);
+  padding: 80px;
+  border-radius: 40px;
+}
+.btnRegistro{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #b9b4b4;
+    border-color: black;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.btnRegistro:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.form-floating{
+    margin: 0 auto;
+    width: 50%;
+    align-self: center;
+}
+.mb-4{
+    margin-bottom: 60px !important;
+}
+.olvide{
+    display: flex;
+    text-align: center;
+}
+.inicioBajo{
+    display: inline-block;
+    width: 50%;
+}

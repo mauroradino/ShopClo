@@ -1,0 +1,149 @@
+.bodyHome{
+   height: 2500px; 
+}
+.tituloDestacados{
+   padding: 200px;
+   padding-bottom: 100px;
+}
+.cardHome{
+   height: auto !important;
+   width: 18rem;
+}
+a{
+   text-decoration: none;
+}
+.carousel-container{
+   display: flex;
+}
+.cardDestacado{
+   height: 450px;
+   position: relative;
+}
+.carousel-item.active{
+   display: flex;
+   justify-content: space-evenly;
+}
+.btn-primary-destacado{
+   background-color: black;
+   color: white;
+   border: none;
+   position: absolute;
+   bottom: 20px;
+   left: 35%;
+   right: 35%;
+}
+.btn-primary:hover{
+   background-color: #797979;
+   color: black;
+}
+.bienvenida{
+   background-image: url('../../assets/foto\ inicio\ larroquette.png');
+   background-repeat: no-repeat;
+   background-position: right;
+   display: flex;
+   height: 600px;
+   background-color: #F1F1F1;
+   width: 100%;
+   justify-content: space-between;
+ }
+ .textoBienvenida{
+   width: max-content;
+   align-self: center;
+   font-weight: bolder;
+   padding-left: 80px;
+ }
+ .tituloBienvenida{
+   width: max-content;
+ }
+ .btn_IrAVer{
+   padding: 5px 10px 5px 10px;
+   border-radius: 8px;
+   color: white;
+   background-color: black;
+   border: none;
+   margin-top: 40px;
+ }
+ .subtituloBienvenida{
+   font-weight: 400;
+ }
+.carousel-control-next-icon, 
+.carousel-control-prev-icon{
+   border-radius: 20px;
+   width: 40px;
+   height: 40px;
+   background-color: rgb(136, 136, 136);
+}
+.running{
+   z-index: 0;
+   height: auto;
+   margin-top: 300px;
+   width: 100%;
+}
+.tituloRunning{
+   z-index: 999;
+   text-shadow: 2px 1px black;
+   color: white;
+   position: relative;
+   top: 50%; /* Ajusta la posición verticalmente como desees */
+   left: 50%; /* Ajusta la posición horizontalmente como desees */
+   transform: translate(-80%, -1000%);
+   justify-content: center;
+}
+.btnRunning{
+   background-color: black;
+   color: white;
+   border: none;
+   padding: 10px;
+   position: relative;
+   border-radius: 10px;
+   top: 50%; /* Ajusta la posición verticalmente como desees */
+   left: 50%; /* Ajusta la posición horizontalmente como desees */
+   transform: translate(-1250%, -850%);
+}
+.btn_IrAVer:hover,
+.btnRunning:hover{
+   background-color: #797979;
+   color: black;
+}
+.Eventos{
+   margin-top: 140px;
+}
+.gridEventos{
+   margin-top: 100px;
+   display: grid;
+   grid-template-columns: 25% 25% 25%;
+   grid-template-rows: 100px;
+   gap: 20px;
+   justify-content: center;
+}
+.evento1{
+grid-column: 1/2;
+grid-row: 1/2;
+}
+.evento2{
+grid-column: 2/3;
+grid-row: 1/2;
+}
+.evento3{
+grid-column: 3/4;
+grid-row: 1/2;
+}
+.pieEvento{
+   margin-top: 40px;
+   font-size: 20px;
+}
+ @media (max-width: 767px){
+   .btn_IrAVer,
+   .subtituloBienvenida,
+   .tituloBienvenida{
+      display: none;
+   }
+   .bienvenida{
+      background-image: url('https://pbs.twimg.com/media/FbrOWpqXwAEwZ2k.jpg:large');
+      background-repeat: no-repeat;
+      display: flex;
+      height: 1500px;
+      background-size: cover;
+      width: 100%;
+    }
+ }

@@ -1,0 +1,65 @@
+.cardCarrito {
+  width: 400px;
+  height: 600px;
+  margin-top: 60px;
+}
+.bodyCart {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e0e0e0;
+}
+
+.productosCart {
+  display: grid;
+}
+
+.preTicket {
+  display: grid;
+  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px;
+}
+
+.datos {
+  margin-bottom: 300px;
+  background-color: rgb(204, 203, 203);
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 30px;
+  height: max-content;
+  vertical-align: middle;
+}
+
+.tituloTicket {
+  margin-top: 100px;
+}
+
+.ticketContent {
+  justify-self: flex-start;
+  margin-top: 400px;
+}
+.mail,
+.nombre,
+.apellido {
+  margin-top: 10px;
+}
+.btnFinalizar,
+.buttonDelete {
+  background-color: #b9b4b4;
+  border: 1px black solid;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.btnFinalizar:hover,
+.buttonDelete:hover {
+  color: white;
+  background-color: black;
+}
+
+.btnFinalizar {
+  margin-top: 40px;
+}
+.card-img-top-carrito{
+  width: 300px;
+  padding-top: 60px;
+  align-self: center;
+}

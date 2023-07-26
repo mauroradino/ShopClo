@@ -1,0 +1,73 @@
+.detailCard{
+    display: inline-flex;
+    justify-content: center;
+    width: 50%;
+    height: 800px;
+}
+.imagenCarrousel{
+    width: 340px;
+    height: 400px;
+    margin: 0 auto;
+    display: table-cell; /* Permite alinear verticalmente */
+    vertical-align: middle;
+    padding: 40px;
+}
+.cardDetail{
+    display: block;
+    background-color: rgb(204, 203, 203);
+    height: auto;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.carousel {
+    overflow: hidden;
+    height: auto; 
+}
+  .card-title{
+    margin-bottom: 20px;
+  }
+.card-body{
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
+}
+.card-text-details{
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 90%;
+    margin-bottom: 50px;
+}
+.precio{
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.cantidad{
+    display: flex;
+}
+.cantidadBtn{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px black solid;
+    background-color: #B8B4B5;
+}
+.LinkDetails{
+    position: relative;
+    bottom: 10px;
+    padding: 10px;
+    background-color: #b9b4b4;
+    border-color: black;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.LinkDetails:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
