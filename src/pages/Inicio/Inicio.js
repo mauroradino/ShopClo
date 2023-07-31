@@ -29,9 +29,26 @@ function Inicio() {
     };
   }, [screenWidth]);
 
+
+let cantCards
+
+
+if (screenWidth < 600) {
+  cantCards = 1;
+  console.log(cantCards);
+} else if (screenWidth >= 600 && screenWidth < 920) {
+  cantCards = 2;
+  console.log(cantCards);
+} else if (screenWidth >= 920 && screenWidth < 1200) {
+  cantCards = 3;
+  console.log(cantCards);
+} else if (screenWidth >= 1200) {
+  cantCards = 4;
+  console.log(cantCards);
+}
   const productosDestacadosGrupos = [];
-  for (let i = 0; i < productosDestacados.length; i += 4) {
-    const grupo = productosDestacados.slice(i, i + 4);
+  for (let i = 0; i < productosDestacados.length; i += cantCards) {
+    const grupo = productosDestacados.slice(i, i + cantCards);
     productosDestacadosGrupos.push(grupo);
   }
 
@@ -44,9 +61,10 @@ function Inicio() {
         <h4 className='subtituloBienvenida'>Visita nuestra seccion de la seleccion argentina!</h4>
         <button className='btn_IrAVer'>Ir a ver</button>
         </div>
+        <h2 className='tituloMobile'>Bienvenidos</h2>
       </div>
       <div className='bodyHome'>
-        <h2 className='tituloDestacados'>Productos Destacados</h2>
+        <p className='tituloDestacados'>Productos Destacados</p>
         <div id="carouselExample" className="carousel carousel-container slide">
           <div className="carousel-inner">
             {productosDestacadosGrupos.map((grupo, index) => (
@@ -74,10 +92,10 @@ function Inicio() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div>
+        <div className='divRunning'>
           <img src={bannerRunning} className='running' />
           <h2 className='tituloRunning'>Conoce nuestro apartado de Running!</h2>
-          <Link to="/Running"><button className='btnRunning'>Conocer más</button></Link>
+          <Link to="/Running" className='btnRunning'>Conocer más</Link>
         </div>
         <div className='Eventos'>
           <h2>Eventos Que Marcan Tendencia</h2>

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../../context/ShopContext';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
-import './LoginPage.css';
 import Swal from 'sweetalert2';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
+import './LoginPage.css';
 
 const LoginPage = () => {
   const { registered, setRegistered } = useContext(ShopContext);

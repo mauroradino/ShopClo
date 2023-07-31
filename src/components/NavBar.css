@@ -66,3 +66,19 @@
   margin-right: 30px;
   align-self: center;
 }
+
+@media (min-width: 992px){
+  .linkLogin{
+    display: none;
+  }
+}
+@media (max-width: 992px){
+  .loginLogo{
+    display: none;
+  }
+}
+@media (max-width: 600px){
+  h6{
+    font-size: 12px;
+  }
+}

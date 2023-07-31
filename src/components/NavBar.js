@@ -54,6 +54,11 @@ function NavBar() {
                 Hombres
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="link linkLogin" to="/Login">
+                Registrate / Inicia Sesion
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

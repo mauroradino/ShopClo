@@ -34,7 +34,7 @@ label{
 }
 .form-floating{
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     align-self: center;
 }
 .mb-4{
@@ -47,4 +47,28 @@ label{
 .inicioBajo{
     display: inline-block;
     width: 50%;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
+    background-color: #b9b4b4;
+    color: black;
+    border: 1px black solid;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+div:where(.swal2-container) button:where(.swal2-styled){
+    box-shadow: none !important;
+}
+
+@media (min-width: 1000px) and (max-width: 601px){
+    .form-floating{
+        width: 50%;
+    }
+}
+@media (max-width: 600px){
+    .form-floating{
+        width: 100%;
+    }
 }
