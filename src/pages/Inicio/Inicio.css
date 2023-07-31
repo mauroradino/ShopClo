@@ -1,117 +1,175 @@
 
-   .bodyHome{
-      height: 2500px; 
-   }
-   .tituloMobile{
-      display: none;
-   }
-   .tituloDestacados{
-      text-align: center;
-   }
-   .cardHome{
-      height: auto !important;
-      width: 18rem;
-   }
-   a{
+   a, Link{
       text-decoration: none;
    }
-   .carousel-container{
-      display: flex;
+   
+   @media (min-width:1024px){
+      .bodyHome{
+         height: 2200px; 
+      }
+      .tituloMobile{
+         display: none;
+      }
+      .tituloDestacados{
+         text-align: center;
+      }
+      .cardHome{
+         height: auto !important;
+         width: 18rem;
+      }
+      a{
+         text-decoration: none;
+      }
+      .carousel-container{
+         display: flex;
+      }
+      .cardDestacado{
+         height: 450px;
+         position: relative;
+      }
+      .carousel-item.active{
+         display: flex;
+         justify-content: space-evenly;
+      }
+      .btn-primary-destacado{
+         background-color: black;
+         color: white;
+         border: none;
+         position: absolute;
+         bottom: 20px;
+         left: 35%;
+         right: 35%;
+      }
+      .btn-primary:hover{
+         background-color: #797979;
+         color: black;
+      }
+      .bienvenida{
+         background-image: url('../../assets/foto\ inicio\ larroquette.png');
+         background-repeat: no-repeat;
+         background-position: right;
+         display: flex;
+         height: 600px;
+         background-color: #F1F1F1;
+         width: 100%;
+         justify-content: space-between;
+       }
+       .textoBienvenida{
+         width: max-content;
+         align-self: center;
+         font-weight: bolder;
+         padding-left: 80px;
+       }
+       .tituloBienvenida{
+         width: max-content;
+       }
+       .btn_IrAVer{
+         padding: 5px 10px 5px 10px;
+         border-radius: 8px;
+         color: white;
+         background-color: black;
+         border: none;
+         margin-top: 40px;
+       }
+       .subtituloBienvenida{
+         font-weight: 400;
+       }
+      .carousel-control-next-icon, 
+      .carousel-control-prev-icon{
+         border-radius: 20px;
+         width: 40px;
+         height: 40px;
+         background-color: rgb(136, 136, 136);
+      }
+      .running{
+         z-index: 0;
+         height: auto;
+         margin-top: 300px;
+         width: 100%;
+      }
+      .tituloRunning{
+         z-index: 999;
+         text-shadow: 2px 1px black;
+         color: white;
+      }
+      .btnRunning{
+         background-color: black;
+         color: white;
+         border: none;
+         padding: 15px;
+         width: max-content;
+         position: absolute;
+         right: 0;
+         margin-right: 20px;
+         margin-top: 150px;
+         border-radius: 10px;
+      }
+      .btn_IrAVer:hover,
+      .btnRunning:hover{
+         background-color: #797979;
+         color: black;
+      }
+      .Eventos{
+         margin-top: 140px;
+      }
+      .gridEventos{
+         margin-top: 100px;
+         display: grid;
+         grid-template-columns: 25% 25% 25%;
+         grid-template-rows: 100px;
+         gap: 20px;
+         justify-content: center;
+      }
+      .evento1{
+      grid-column: 1/2;
+      grid-row: 1/2;
+      }
+      .evento2{
+      grid-column: 2/3;
+      grid-row: 1/2;
+      }
+      .evento3{
+      grid-column: 3/4;
+      grid-row: 1/2;
+      }
+      .pieEvento{
+         margin-top: 40px;
+         font-size: 20px;
+      }
+      .tituloDestacados{
+         margin-top: 200px;
+         margin-bottom: 50px;
+      }
+      .tituloRunning{
+         display: none;
+      }
+      .divRunning{
+         background-image: url("../../assets/bannerRunning.jpg");
+         height: 500px;
+         background-repeat: no-repeat;
+         width: 100%;
+         margin-top: 300px;
+         background-position: center;
+      }
+      .tituloRunningDesktop{
+         color: white;
+         font-size: 25px;
+         position: absolute;
+         right: 30px;
+         text-shadow: 2px 1px black;
+         margin-top: 100px;
+      }
    }
-   .cardDestacado{
-      height: 450px;
-      position: relative;
-   }
-   .carousel-item.active{
-      display: flex;
-      justify-content: space-evenly;
-   }
-   .btn-primary-destacado{
-      background-color: black;
-      color: white;
-      border: none;
-      position: absolute;
-      bottom: 20px;
-      left: 35%;
-      right: 35%;
-   }
-   .btn-primary:hover{
-      background-color: #797979;
-      color: black;
-   }
-   .bienvenida{
-      background-image: url('../../assets/foto\ inicio\ larroquette.png');
-      background-repeat: no-repeat;
-      background-position: right;
-      display: flex;
-      height: 600px;
-      background-color: #F1F1F1;
-      width: 100%;
-      justify-content: space-between;
-    }
-    .textoBienvenida{
-      width: max-content;
-      align-self: center;
-      font-weight: bolder;
-      padding-left: 80px;
-    }
-    .tituloBienvenida{
-      width: max-content;
-    }
-    .btn_IrAVer{
-      padding: 5px 10px 5px 10px;
-      border-radius: 8px;
-      color: white;
-      background-color: black;
-      border: none;
-      margin-top: 40px;
-    }
-    .subtituloBienvenida{
-      font-weight: 400;
-    }
-   .carousel-control-next-icon, 
-   .carousel-control-prev-icon{
-      border-radius: 20px;
-      width: 40px;
-      height: 40px;
-      background-color: rgb(136, 136, 136);
-   }
-   .running{
-      z-index: 0;
-      height: auto;
-      margin-top: 300px;
-      width: 100%;
-   }
-   .tituloRunning{
-      z-index: 999;
-      text-shadow: 2px 1px black;
-      color: white;
-   }
-   .btnRunning{
-      background-color: black;
-      color: white;
-      border: none;
-      padding: 15px;
-      width: max-content;
-      position: absolute;
-      right: 0;
-      margin-right: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-   }
-   .btn_IrAVer:hover,
-   .btnRunning:hover{
-      background-color: #797979;
-      color: black;
-   }
-   .Eventos{
-      margin-top: 140px;
+   
+@media (min-width: 768px) and (max-width: 1023px){
+   .bodyHome{
+      height: 2100px;
    }
    .gridEventos{
       margin-top: 100px;
       display: grid;
-      grid-template-columns: 25% 25% 25%;
-      grid-template-rows: 100px;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: 200px;
       gap: 20px;
       justify-content: center;
    }
@@ -127,19 +185,66 @@
    grid-column: 3/4;
    grid-row: 1/2;
    }
-   .pieEvento{
-      margin-top: 40px;
-      font-size: 20px;
+   .bienvenida{
+      background-image: url('../../assets/logoIndex.png');
+      background-repeat: no-repeat;
+      display: flex;
+      height: 400px;
+      background-position: center;
+      width: auto;
+      margin-bottom: 150px;
+      padding-top: 150px;
+    }
+    .tituloDestacados{
+      font-size: 40px;
+    }
+   .tituloRunning{
+      font-size: 35px;
+      padding-top: 200px;
+      margin-bottom: 80px;
    }
-
+   .tituloRunningDesktop{
+      display: none;
+   }
+   .divRunning{
+      background-image: url("../../assets/runningMobile.webp");
+      height: 600px;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      width: 80%;
+      background-position: center;
+   }
+   .btnRunning{
+      width: auto;
+      position: absolute;
+      right: 180px;
+      padding: 10px;
+      margin-top: 140px;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      border: 1px black solid;
+      border-radius: 10px;
+   }
+   .textoBienvenida{
+      display: none;
+   }
+   .tituloEventos{
+      margin-top: 200px;
+      margin-bottom: 100px;
+   }
+}
  @media (max-width: 767px){
+   .tituloRunningDesktop{
+      display: none;
+   }
    .tituloDestacados{
       text-align: center;
       padding-top: 120px;
       font-size: 28px;
    }
    .bodyHome{
-      height: 3200px; 
+      height: 3600px; 
    }
    .btn_IrAVer,
    .subtituloBienvenida,
@@ -156,21 +261,20 @@
     }
     .tituloRunning{
       z-index: 1;
-      font-size: 20px;
-      padding-top: 40px;
-      text-shadow: none;
+      font-size: 25px;
+      margin-top: 200px;
       color: black;
    }
    .btnRunning{
-      display: flex;
+      position: absolute;
+      right: 18px;
+      margin-top: 200px;
+      width: max-content;
+      padding: 10px;
       background-color: black;
       color: white;
       border: 1px black solid;
       border-radius: 10px;
-   }
-   .tituloMobile{
-      color: black;
-      z-index: 999;
    }
    .gridEventos{
       margin-top: 100px;
@@ -187,20 +291,18 @@
    .evento2{
    grid-column: 1/2;
    grid-row: 2/3;
-   margin-top: 350px;
    }
    .evento3{
    grid-column: 1/2;
    grid-row: 3/4;
    }
-   .running{
-      display: none;
-   }
    .divRunning{
       background-image: url("../../assets/runningMobile.webp");
       width: 100%;
-      height: 800px;
-      margin-top: 100px;
+      height: 580px;
       background-position: center;
+   }
+   .tituloEventos{
+      margin-top: 200px;
    }
  }

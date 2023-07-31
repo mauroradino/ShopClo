@@ -61,10 +61,9 @@ if (screenWidth < 600) {
         <h4 className='subtituloBienvenida'>Visita nuestra seccion de la seleccion argentina!</h4>
         <button className='btn_IrAVer'>Ir a ver</button>
         </div>
-        <h2 className='tituloMobile'>Bienvenidos</h2>
       </div>
       <div className='bodyHome'>
-        <p className='tituloDestacados'>Productos Destacados</p>
+        <h2 className='tituloDestacados'>Productos Destacados</h2>
         <div id="carouselExample" className="carousel carousel-container slide">
           <div className="carousel-inner">
             {productosDestacadosGrupos.map((grupo, index) => (
@@ -92,13 +91,13 @@ if (screenWidth < 600) {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+        <h2 className='tituloRunning'>Conoce nuestro apartado de Running</h2>
         <div className='divRunning'>
-          <img src={bannerRunning} className='running' />
-          <h2 className='tituloRunning'>Conoce nuestro apartado de Running!</h2>
+          <h2 className='tituloRunningDesktop'>Conoce nuestro apartado de Running</h2>
           <Link to="/Running" className='btnRunning'>Conocer más</Link>
         </div>
         <div className='Eventos'>
-          <h2>Eventos Que Marcan Tendencia</h2>
+          <h2 className='tituloEventos'>Eventos Que Marcan Tendencia</h2>
           <div className='gridEventos'>
             <div className='evento1'><Link target='_blank' to="https://maratondebuenosaires.com/"><img width={"80%"} src={bannerEvento1}/></Link><p className='pieEvento'>Maratón BSAS 21km</p></div>
             <div className='evento2'><Link target='_blank' to="https://www.fifa.com/fifaplus/es/tournaments/womens/womensworldcup/australia-new-zealand2023?intcmp=(p_fifaplus)_(c_webheader-main)_(sc_tournaments)_(ssc_fwwc-2023)_(da_04052023)_(l_es)"><img width={"80%"} src={bannerEvento2}/></Link><p className='pieEvento'>Mundial de Futbol Femenino 2023</p></div>
